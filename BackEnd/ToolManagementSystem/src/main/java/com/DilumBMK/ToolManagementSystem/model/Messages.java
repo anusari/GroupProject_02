@@ -5,21 +5,20 @@ import jakarta.persistence.Id;
 import lombok.*;
 import org.springframework.stereotype.Component;
 
+import java.sql.Date;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-@Data
 @Component
+@Data
 @Entity
-public class Projects {
+public class Messages {
 
     @Id
-    private String Project_Id;
-    private String Project_Name;
+    private String MessageId;
     private String Description;
-    private String Supervisor_Id;
-    private String Supervisor_Name;
-    private String Location;
+    private Date Date;
 
 }

@@ -5,21 +5,21 @@ import jakarta.persistence.Id;
 import lombok.*;
 import org.springframework.stereotype.Component;
 
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
 @Data
 @Component
 @Entity
-public class Projects {
+public class AllocatedTools {
 
     @Id
-    private String Project_Id;
-    private String Project_Name;
-    private String Description;
-    private String Supervisor_Id;
-    private String Supervisor_Name;
-    private String Location;
+    private String Tool_Id;
+    private String ToolName;
+    private int AllocatedQuantity;
+    private int SavedQuantity;
+    @Id
+    private String ProjectId;
 
 }
